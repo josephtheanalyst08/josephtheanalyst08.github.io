@@ -727,6 +727,8 @@ ul { margin: 0; padding: 0; list-style: none; }
     justify-content: center;
     padding: 6px 4px;
   }
+
+   .services__panel,
   .projects-grid,
   .skill-bars { grid-template-columns: 1fr; }
 
