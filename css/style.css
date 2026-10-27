@@ -372,7 +372,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 /* Home "My Projects" heading row with the "View All Projects" link */
 .section-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; }
-.link-gold { color: var(--gold); font-size: clamp(13px, 1.1vw, 16px); }
+.link-gold { color: var(--gold); font-size: clamp(12px, 1.1vw, 16px); white-space: nowrap; }
 .link-gold:hover { text-decoration: underline; }
 .projects-lead { margin-top: 10px; max-width: 900px; font-size: clamp(16px, 1.7vw, 26px); line-height: 1.45; }
 
@@ -750,5 +750,5 @@ ul { margin: 0; padding: 0; list-style: none; }
   .stats-row { gap: 24px 8px; }
   .stats-grid .stat { padding-inline: 4px; }
   .hero__buttons .btn { flex: 1 1 100%; }
-  .section-head { flex-direction: column; align-items: flex-start; }
+  .section-head { flex-wrap: nowrap; align-items: baseline; }
 }
