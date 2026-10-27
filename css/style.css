@@ -713,6 +713,20 @@ ul { margin: 0; padding: 0; list-style: none; }
 
   /* Grids go to one column */
   .services__panel,
+   /* Home skills: equal square cards, all on one line */
+  .skills-home__grid { gap: 8px; }
+  .logo-card {
+    flex: 1 1 0;
+    min-width: 0;
+    width: auto;
+    aspect-ratio: 1 / 1;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 4px;
+  }
   .projects-grid,
   .skill-bars { grid-template-columns: 1fr; }
 
