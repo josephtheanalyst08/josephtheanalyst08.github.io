@@ -682,7 +682,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   .hero__text { margin-inline: auto; }
   .hero__buttons, .hero .social { justify-content: center; }
 
-  .stats-row .stat { flex: 0 0 calc(50% - 8px); }
+  .stats-row .stat { flex: 0 0 calc((100% - 32px) / 3); min-width: 0; }
   .approach__grid { grid-template-columns: repeat(2, 1fr); }
   .journey__text { margin-right: 0; padding-right: 0; background: none; }
 }
@@ -747,7 +747,11 @@ ul { margin: 0; padding: 0; list-style: none; }
 /* ---- Small phones (≤ 520px) ---- */
 @media (max-width: 520px) {
   .approach__grid { grid-template-columns: 1fr; }
-  .stats-row { gap: 24px 8px; }
+   
+  .stats-row { gap: 8px; }
+  .stats-row .stat__num { font-size: 28px; }
+  .stats-row .stat__label { font-size: 11px; }
+   
   .stats-grid .stat { padding-inline: 4px; }
   .hero__buttons .btn { flex: 1 1 100%; }
   .section-head { flex-wrap: nowrap; align-items: baseline; }
