@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ================= HEAD: page settings (not visible on the page) ================= -->
+  <meta charset="UTF-8">
+  <!-- Makes the page scale properly on phones -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Me | Joseph Ekpoh – Data Analyst</title>
+  <meta name="description" content="Learn about Joseph Ekpoh, a Lagos-based data analyst skilled in Excel, SQL Server and Power BI.">
+  <meta name="theme-color" content="#643C3A">
+
+  <!-- Tab icon (favicon) -->
+  <link rel="icon" href="favicon.ico">
+
+  <!-- Fonts: Manrope (headers) + Space Grotesk (body) from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main stylesheet shared by all pages -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ICON SPRITE: all icons used on this page are defined once here (hidden), then
+     re-used anywhere with <svg class="icon"><use href="#name"/></svg>. -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></g></symbol>
+  <symbol id="linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></symbol>
+  <symbol id="github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></symbol>
+  <symbol id="x" viewBox="0 0 24 24"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></symbol>
+  <symbol id="menu" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></g></symbol>
+  <symbol id="close" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></g></symbol>
+  <symbol id="arrow-up-right" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></g></symbol>
+  <symbol id="database" viewBox="0 0 60 64"><path fill="currentColor" d="M60 21.8947V32C60 40.3705 46.5667 47.1579 30 47.1579C13.4333 47.1579 0 40.3705 0 32V21.8947C0 30.2653 13.4333 37.0526 30 37.0526C46.5667 37.0526 60 30.2653 60 21.8947ZM0 38.7368C0 47.1074 13.4333 53.8947 30 53.8947C46.5667 53.8947 60 47.1074 60 38.7368V48.8421C60 57.2126 46.5667 64 30 64C13.4333 64 0 57.2126 0 48.8421V38.7368ZM30 30.3158C13.4333 30.3158 0 23.5284 0 15.1579C0 6.78737 13.4333 0 30 0C46.5667 0 60 6.78737 60 15.1579C60 23.5284 46.5667 30.3158 30 30.3158Z"/></symbol>
+  <symbol id="chart-line" viewBox="0 0 60 57"><path fill="currentColor" d="M6.29591 0V50.6667H56.6632V57H0V0H6.29591ZM53.3263 9.31L60 16.0233L40.9234 35.2197L31.4795 25.7197L19.0766 38.1963L12.4029 31.4767L31.4795 12.2867L40.9234 21.7867L53.3263 9.31V9.31Z"/></symbol>
+  <symbol id="bars" viewBox="0 0 60 63"><path fill="currentColor" d="M0 33.1579H13.3333V63H0V33.1579ZM46.6667 19.8947H60V63H46.6667V19.8947ZM23.3333 0H36.6667V63H23.3333V0Z"/></symbol>
+  <symbol id="bulb" viewBox="0 0 60 78"><path fill="currentColor" d="M26.2508 59.4277H14.7795C13.6658 54.6992 8.64076 50.8324 6.57826 48.2843C3.04648 43.9135 0.833069 38.6433 0.193006 33.0809C-0.447057 27.5185 0.512266 21.8901 2.96047 16.8441C5.40866 11.7982 9.24614 7.53988 14.0308 4.55981C18.8155 1.57973 24.3528 -0.000896085 30.0048 3.81116e-07C35.6568 0.000896847 41.1936 1.58328 45.9773 4.56487C50.761 7.54647 54.5971 11.806 57.0437 16.8527C59.4903 21.8995 60.4478 27.5281 59.8059 33.0903C59.164 38.6525 56.9489 43.922 53.4157 48.2917C51.3532 50.8361 46.3357 54.7029 45.222 59.4277H33.7507V40.8554H26.2508V59.4277ZM45.0007 66.8566V70.5711C45.0007 72.5413 44.2106 74.4309 42.804 75.8241C41.3975 77.2173 39.4899 78 37.5007 78H22.5008C20.5116 78 18.604 77.2173 17.1975 75.8241C15.7909 74.4309 15.0008 72.5413 15.0008 70.5711V66.8566H45.0007Z"/></symbol>
+  <symbol id="target" viewBox="0 0 60 61"><g fill="currentColor"><path d="M28.3352 0.0683618C34.2734 -0.362262 40.1007 1.26902 45.2361 4.18617C44.0168 5.34069 42.758 6.66127 41.5509 7.85138C40.6554 7.3979 39.7369 6.99062 38.7994 6.63114C32.5678 4.29262 25.6619 4.52963 19.6052 7.28994C13.6049 10.0503 8.93196 15.0611 6.59641 21.2392C4.24934 27.496 4.50149 34.4316 7.29672 40.5016C10.0863 46.5036 15.1278 51.1658 21.3296 53.4784C27.5669 55.7763 34.4614 55.5023 40.4967 52.7157C46.4988 49.9158 51.1561 44.8635 53.4584 38.6534C55.7773 32.3324 55.4535 25.3439 52.5599 19.2644L52.1571 18.4742C53.3949 17.2518 54.6244 16.0215 55.8461 14.7833C58.2739 19.1325 59.544 22.9125 59.9234 27.916C60.4888 35.7993 57.9082 43.5856 52.746 49.5706C47.5066 55.6796 40.0323 59.4267 32.0029 59.9702C24.1386 60.4976 16.3831 57.9042 10.4181 52.7518C-7.38844 37.3247 -1.3706 8.64266 20.8795 1.43626C23.3865 0.624282 25.7122 0.254108 28.3352 0.0683618Z"/><path d="M12.4902 30.0814C12.5521 26.9982 13.1304 24.4384 14.5872 21.738C17.7363 15.9006 23.9103 12.3137 30.5483 12.5383C33.7339 12.646 35.9727 13.4009 38.7823 14.8758C37.5367 16.1111 36.2974 17.3531 35.065 18.6017C31.6752 17.2706 28.4438 17.0833 25.0321 18.5643C21.9667 19.8896 19.5608 22.3887 18.3531 25.5023C17.1479 28.585 17.2208 32.0209 18.5556 35.0498C19.8966 38.0987 22.3977 40.4874 25.5051 41.6871C28.6297 42.8903 32.1064 42.7887 35.1553 41.4044C38.1905 40.0284 40.5499 37.4966 41.7082 34.3715C41.9733 33.6772 42.1676 32.957 42.2882 32.2235C42.3825 31.6488 42.4308 31.2064 42.4777 30.6322L42.4948 30.3133L42.4914 30.1796C42.4616 27.9184 42.1857 26.9898 41.4254 24.9382C42.4782 23.979 43.4611 22.897 44.4856 21.9057C44.695 21.7031 44.9392 21.4641 45.1321 21.2476C47.5051 25.5 48.1663 30.1254 46.8259 34.854C45.5329 39.3145 42.529 43.0836 38.4683 45.3386C34.396 47.5979 29.5902 48.1384 25.1176 46.8405C20.6216 45.5275 16.8364 42.4728 14.6034 38.3555C13.8018 36.8887 13.2191 35.3125 12.8736 33.6767L12.8156 33.3764C12.6661 32.7265 12.576 31.7084 12.4997 31.0199L12.5091 30.9071L12.5023 30.2108L12.4902 30.0814Z"/><path d="M42.9062 10.7513C43.9746 9.62728 45.2246 8.42897 46.334 7.32001L52.988 0.664062L52.9885 7.03211L59.3665 7.0345C58.1912 8.1482 56.9475 9.44198 55.7952 10.5941L49.278 17.1234C47.9059 17.1579 46.4092 17.1275 45.0274 17.1268C43.7647 18.3275 42.4565 19.6898 41.2177 20.9303L34.4412 27.702C34.9232 28.7814 35.098 29.6219 34.9412 30.8124C34.8206 31.3285 34.7147 31.7113 34.4998 32.2001C33.9266 33.3398 33.0227 34.2138 31.8284 34.6826C30.571 35.1723 29.1696 35.1396 27.9366 34.5913C26.6146 33.998 25.7885 32.996 25.2761 31.6693C25.2093 31.4882 25.1752 31.3417 25.1282 31.1537C24.8464 30.1742 25.0263 28.8536 25.4496 27.9318C26.0102 26.7239 27.0277 25.7883 28.2782 25.3308C29.6594 24.8312 30.9973 24.9689 32.305 25.588L42.9106 14.9807C42.8984 13.5709 42.897 12.1611 42.9062 10.7513Z"/></g></symbol>
+  <symbol id="broom" viewBox="0 0 60 62"><path fill="currentColor" d="M58.6895 57.7651C52.4592 54.7176 48.8871 48.1936 48.8871 39.8566V35.0654C48.8895 34.1781 48.6233 33.3106 48.1233 32.5764C47.6233 31.8421 46.9128 31.2751 46.0844 30.9495L38.1264 27.7775C37.5812 27.56 37.1445 27.1363 36.9119 26.5989C36.6792 26.0616 36.6695 25.4544 36.8848 24.9099L43.0846 9.22413C44.4428 5.75316 42.7762 1.71754 39.2597 0.41662C37.6228 -0.189993 35.8123 -0.132274 34.2177 0.577367C32.623 1.28701 31.3715 2.59189 30.7322 4.21143L24.513 19.9498C24.4058 20.2212 24.2459 20.4689 24.0423 20.6785C23.8388 20.8881 23.5957 21.0556 23.327 21.1714C23.0583 21.2871 22.7693 21.3488 22.4766 21.3529C22.184 21.357 21.8933 21.3035 21.6215 21.1954L13.6412 18.0123C12.8266 17.6837 11.9323 17.6046 11.0723 17.785C10.2124 17.9655 9.42603 18.3973 8.81361 19.0253C2.96661 25.0206 5.61912e-05 32.0262 5.61912e-05 39.8566C-0.0152251 47.8568 3.08684 55.5505 8.65251 61.3163C8.86279 61.534 9.11524 61.7068 9.39457 61.8243C9.67389 61.9418 9.97426 62.0016 10.2774 62H57.7757C58.3422 62.001 58.8877 61.7864 59.3007 61.4001C59.7138 61.0137 59.9631 60.4847 59.9978 59.9213C60.0175 59.4733 59.9038 59.0296 59.671 58.6459C59.4382 58.2622 59.0967 57.9558 58.6895 57.7651ZM25.3074 57.5713C22.02 54.4282 19.685 50.4278 18.5688 46.0263C18.4342 45.4719 18.0952 44.9882 17.6192 44.6713C17.1432 44.3544 16.565 44.2275 15.9995 44.3158C15.6982 44.3699 15.4115 44.4856 15.1572 44.6554C14.903 44.8252 14.6866 45.0455 14.5218 45.3025C14.357 45.5595 14.2473 45.8477 14.1994 46.1489C14.1516 46.4502 14.1668 46.7581 14.244 47.0532C15.2144 50.8662 16.9492 54.444 19.3438 57.5713H11.233C6.85214 52.7046 4.43393 46.3944 4.44433 39.8566C4.41693 36.3916 5.14974 32.9624 6.59148 29.8091L44.8678 45.0686C45.7011 50.0675 47.7983 54.3411 50.9482 57.5768L25.3074 57.5713Z"/></symbol>
+  <symbol id="search" viewBox="0 0 60 60"><path fill="currentColor" d="M47.3496 43.1732L60 55.8206L55.8206 60L43.1732 47.3496C38.4673 51.1221 32.614 53.1739 26.5827 53.1653C11.909 53.1653 0 41.2563 0 26.5827C0 11.909 11.909 0 26.5827 0C41.2563 0 53.1653 11.909 53.1653 26.5827C53.1739 32.614 51.1221 38.4673 47.3496 43.1732ZM41.4246 40.9816C45.1731 37.1268 47.2665 31.9595 47.258 26.5827C47.2581 15.158 38.0043 5.90726 26.5827 5.90726C15.158 5.90726 5.90726 15.158 5.90726 26.5827C5.90726 38.0043 15.158 47.258 26.5827 47.258C31.9595 47.2665 37.1268 45.1731 40.9816 41.4246L41.4246 40.9816Z"/></symbol>
+  <symbol id="shield-check" viewBox="0 0 60 73"><path fill="currentColor" d="M30 0L57.39 6.059C58.9133 6.39745 60 7.74132 60 9.29755V42.4362C60 49.0925 56.6567 55.3108 51.0933 59.0006L30 73L8.90667 59.0006C3.34 55.3075 0 49.0925 0 42.4395V9.29755C0 7.74132 1.08667 6.39745 2.61 6.059L30 0ZM30 6.79895L6.66667 11.9587V42.4362C6.66667 46.8726 8.89333 51.017 12.6033 53.4791L30 65.0264L47.3967 53.4791C51.1067 51.017 53.3333 46.876 53.3333 42.4395V11.9587L30 6.80227V6.79895ZM44.84 23.9639L49.5567 28.6558L28.3433 49.7727L14.2 35.6937L18.9133 31.0018L28.34 40.3856L44.84 23.9606V23.9639Z"/></symbol>
+  <symbol id="trending-up" viewBox="0 0 60 39"><path fill="currentColor" d="M60 3.07873V19.4986C60 20.3151 59.6731 21.0982 59.0911 21.6756C58.5092 22.253 57.7199 22.5773 56.897 22.5773C56.074 22.5773 55.2847 22.253 54.7028 21.6756C54.1209 21.0982 53.7939 20.3151 53.7939 19.4986V10.519L34.2681 29.8945C33.9798 30.1815 33.6372 30.4092 33.2601 30.5646C32.8829 30.72 32.4785 30.8 32.0701 30.8C31.6617 30.8 31.2573 30.72 30.8801 30.5646C30.5029 30.4092 30.1604 30.1815 29.8721 29.8945L21.7292 21.8077L5.3064 38.0967C4.72346 38.6751 3.93282 39 3.10842 39C2.28401 39 1.49338 38.6751 0.910435 38.0967C0.327493 37.5183 1.22846e-08 36.7339 0 35.9159C-1.22846e-08 35.098 0.327493 34.3135 0.910435 33.7352L19.5287 15.2628C19.8169 14.9758 20.1595 14.748 20.5367 14.5927C20.9138 14.4373 21.3182 14.3573 21.7266 14.3573C22.135 14.3573 22.5394 14.4373 22.9166 14.5927C23.2938 14.748 23.6363 14.9758 23.9246 15.2628L32.0727 23.347L49.398 6.15746H40.3474C39.5245 6.15746 38.7352 5.83309 38.1533 5.25572C37.5713 4.67834 37.2444 3.89526 37.2444 3.07873C37.2444 2.2622 37.5713 1.47911 38.1533 0.901738C38.7352 0.324365 39.5245 1.72071e-08 40.3474 0H56.897C57.7199 0 58.5092 0.324365 59.0911 0.901738C59.6731 1.47911 60 2.2622 60 3.07873Z"/></symbol>
+  <symbol id="handshake" viewBox="0 0 60 60"><path fill="currentColor" d="M29.5836 1.50319C32.5488 -0.462686 36.4012 -0.503439 39.4078 1.39925L51.8735 9.28795H57C58.6569 9.28795 60 10.6237 60 12.2713V39.1217C60 40.7694 58.6569 42.1051 57 42.1051H52.4408C52.6193 44.9312 51.2804 47.8043 48.587 49.4114L33.3066 58.5289C31.3776 59.6796 28.983 59.6528 27.0945 58.5063C24.9935 60.3539 21.7595 60.5573 19.4133 58.724L3.99088 46.6735C1.69163 44.8772 1.11019 41.8079 2.29739 39.3747C0.847448 38.244 0 36.5127 0 34.6794V12.2715C0 10.6238 1.34317 9.28813 3.00003 9.28813H17.841L29.5836 1.50319ZM6.51798 35.0801L8.5941 33.2737C12.2848 30.062 17.8814 30.3801 21.1802 33.9888L29.2869 42.8566C31.8954 45.7102 32.3712 49.9025 30.474 53.2603L45.5 44.2949C46.3442 43.7913 46.6496 42.7844 46.3349 41.9362L33.0534 23.4458C32.3073 22.4072 30.9795 21.9555 29.7501 22.3223L22.2943 24.5467C19.1229 25.4927 15.6853 24.6308 13.3441 22.3027L12.4658 21.4293C10.7617 19.7347 10.3211 17.3229 11.0382 15.2549H6.00006V34.6794L6.51798 35.0801ZM36.1867 6.4332C35.1844 5.79897 33.9003 5.81254 32.9118 6.46784L16.7085 17.2101L17.5868 18.0836C18.3672 18.8596 19.5131 19.1469 20.5702 18.8315L28.026 16.6072C31.7142 15.5068 35.698 16.8617 37.936 19.9777L49.5437 36.1383H53.9999V15.2547H51.8735C50.7323 15.2547 49.6148 14.9311 48.6521 14.3219L36.1867 6.4332ZM12.5452 37.764L7.69787 41.9819L23.1203 54.0324L25.2321 50.3571C25.8771 49.2348 25.7217 47.8269 24.8471 46.8701L16.7406 38.0023C15.641 36.7994 13.7754 36.6935 12.5452 37.764Z"/></symbol>
+</svg>
+
+  <!-- ================= HEADER / TOP NAVIGATION =================
+       Logo (left) | Home - About Me - Projects pill (centre) | Hire Me (right).
+       The link of the page you are on gets class="is-active" (white pill).
+       On phones the pill + Hire Me hide and the hamburger button shows them. -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <!-- Logo: clicking it goes to the homepage -->
+      <a class="logo" href="index.html" aria-label="Joseph Ekpoh – home"><img src="assets/images/official-logo.png" alt="JE logo" width="52" height="52"></a>
+
+      <!-- Main menu: these three links connect your three pages together -->
+      <nav class="nav-pill" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about-me.html" class="is-active" aria-current="page">About Me</a>
+        <a href="projects.html">Projects</a>
+      </nav>
+
+      <!-- Hire Me button: opens an email to you -->
+      <a class="btn btn--primary btn--sm header-cta" href="mailto:ekpohjoseph6@gmail.com?subject=Data%20Analysis%20Enquiry">Hire Me</a>
+
+      <!-- Hamburger button (phones only); main.js makes it open/close the menu -->
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle menu">
+        <svg class="icon icon-open" aria-hidden="true"><use href="#menu"/></svg><svg class="icon icon-close" aria-hidden="true"><use href="#close"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= PAGE BANNER =================
+         Big "About Me" title with a chart photo on the right half. -->
+    <section class="page-hero" aria-label="About Me">
+      <div class="page-hero__img" style="background-image:url('assets/images/about-hero-monitor.jpg')" role="presentation"></div>
+      <h1>About Me</h1>
+    </section>
+
+    <!-- ================= SECTION 1: PERSONAL INTRODUCTION =================
+         Photo + personal details, bio paragraphs, then the 4 stats. -->
+    <section class="section" aria-labelledby="intro-title">
+      <div class="container">
+        <div class="intro__head center reveal">
+          <h2 id="intro-title">A Personal Introduction</h2>
+          <p>The Person Behind the Data</p>
+        </div>
+
+        <div class="intro__card reveal-group">
+          <img class="intro__photo" src="assets/images/Linkedin-DP-Chair.jpeg" alt="Portrait of Joseph Ekpoh" width="290" height="387">
+          <!-- Personal details: edit the text on the right of each label -->
+          <ul class="intro__details">
+            <li><strong>Name:</strong> <span>Joseph Ekpoh</span></li>
+            <!--<li><strong>Date of Birth:</strong> <span>August 8th, 2002</span></li> -->
+            <li><strong>Address:</strong> <span>Lagos State, Nigeria</span></li>
+            <li><strong>Zip Code:</strong> <span>100001</span></li>
+            <li><strong>Email Address</strong> <a href="mailto:ekpohjoseph6@gmail.com">ekpohjoseph6@gmail.com</a></li>
+          </ul>
+        </div>
+
+        <div class="intro__bio reveal">
+          <p>With a lot of experience working with data, I've grown to enjoy the process of turning raw numbers into meaningful insights.</p>
+          <p>Using Excel, Power BI, and SQL, I clean and analyze data, uncover patterns, and build interactive dashboards that make complex information easier to understand.</p>
+          <p>For me, the real satisfaction comes from helping clients gain clarity from their data, understand what it means for their business, and make better-informed decisions. I take pride in every project I work on and always do my best to deliver accurate, meaningful results they can trust.</p>
+        </div>
+
+        <!-- 4 stats in a row (edit the numbers here) -->
+        <div class="stats-row reveal">
+          
+          <div class="stat"><div class="stat__num">5+</div><div class="stat__label">Projects Completed</div></div>
+          <div class="stat"><div class="stat__num">5+</div><div class="stat__label">Happy Clients</div></div>
+          <div class="stat"><div class="stat__num">100%</div><div class="stat__label">Client Satisfaction</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 2: MY JOURNEY INTO DATA ANALYTICS =================
+         Story on the left, dashboard image on the right. -->
+    <section class="section" style="padding-top:0" aria-labelledby="journey-title">
+      <div class="container">
+        <div class="center reveal">
+          <h2 class="section-title" id="journey-title">My Journey Into Data Analytics</h2>
+          <p class="section-sub">How I Found My Way Into Data</p>
+        </div>
+        <div class="journey__grid">
+          <div class="journey__text reveal">
+            <p>My journey into data analytics began while studying Computer Science at university. It was during one of our SQL classes that I discovered an interest in working with data. Curious to learn more, I started researching SQL and its role in data analytics, and that curiosity soon grew into something bigger.</p>
+            <p>I decided to take things further by attending a tech academy specifically to study data analytics. What started as curiosity became something I genuinely enjoy. From learning to organize and analyze data with Excel to building interactive dashboards in Power BI, writing SQL queries, and exploring a little Python, every step has made me more excited about what data can reveal.</p>
+            <p>Today, I enjoy the challenge of turning raw data into meaningful insights that help people make better decisions. I love what I do, I'm passionate about getting better at it, and I'm confident in the value I bring through my work.</p>
+          </div>
+          <img class="journey__img reveal" src="assets/images/journey-dashboards.jpg" alt="Several screens showing colourful data dashboards" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 3: SKILLS + HOW I APPROACH DATA (white background) =================
+         Part A: three skill cards with progress bars.
+         Part B: six numbered steps of your working process. -->
+    <section class="section section--white" aria-labelledby="skills-title">
+      <div class="container">
+
+        <!-- Part A: skills with bars -->
+        <h2 class="title-left reveal" id="skills-title">My Skills</h2>
+        <ul class="skill-bars">
+
+          <li class="skill-card reveal">
+            <img src="assets/icons/excel.png" alt="" width="56" height="56">
+            <p class="skill-card__name">Microsoft Excel</p>
+            <div class="skill-card__row">
+              <!-- The bar length comes from --level. Change the % here and in the text on the right -->
+              <div class="bar" role="img" aria-label="Microsoft Excel proficiency 75%"><span style="--level:75%"></span></div>
+              <span class="skill-card__pct">75%</span>
+            </div>
+          </li>
+          <li class="skill-card reveal">
+            <img src="assets/icons/sql-server.png" alt="" width="56" height="56">
+            <p class="skill-card__name">SQL Server</p>
+            <div class="skill-card__row">
+              <!-- The bar length comes from --level. Change the % here and in the text on the right -->
+              <div class="bar" role="img" aria-label="SQL Server proficiency 80%"><span style="--level:80%"></span></div>
+              <span class="skill-card__pct">80%</span>
+            </div>
+          </li>
+          <li class="skill-card reveal">
+            <img src="assets/icons/power-bi.png" alt="" width="56" height="56">
+            <p class="skill-card__name">Power BI</p>
+            <div class="skill-card__row">
+              <!-- The bar length comes from --level. Change the % here and in the text on the right -->
+              <div class="bar" role="img" aria-label="Power BI proficiency 75%"><span style="--level:75%"></span></div>
+              <span class="skill-card__pct">75%</span>
+            </div>
+          </li>
+          <li class="skill-card reveal">
+            <img src="assets/icons/Claude_AI_symbol.svg 1.png" alt="" width="56" height="56">
+            <p class="skill-card__name">Claude AI</p>
+            <div class="skill-card__row">
+              <!-- The bar length comes from --level. Change the % here and in the text on the right -->
+              <div class="bar" role="img" aria-label="Microsoft Excel proficiency 85%"><span style="--level:85%"></span></div>
+              <span class="skill-card__pct">85%</span>
+            </div>
+          </li>
+
+          
+        </ul>
+
+        <!-- Part B: the 6-step process -->
+        <div class="approach">
+          <div class="reveal">
+            <h2 class="title-left">How I Approach Data</h2>
+            <p class="approach__sub">A little insight to the structured process I follow to deliver clear results and aid better decision making</p>
+          </div>
+          <ul class="approach__grid">
+
+          <li class="step reveal">
+            <svg class="icon icon-lg" aria-hidden="true"><use href="#target"/></svg>
+            <p class="step__no">01</p>
+            <h3 class="step__title">Define the Objective</h3>
+            <p class="step__text">I understand the goal, the audience and what success looks like.</p>
+          </li>
+          <li class="step reveal">
+            <svg class="icon icon-lg" aria-hidden="true"><use href="#database"/></svg>
+            <p class="step__no">02</p>
+            <h3 class="step__title">Data Collection</h3>
+            <p class="step__text">I gather the right data from relevant sources and systems.</p>
+          </li>
+          <li class="step reveal">
+            <svg class="icon icon-lg" aria-hidden="true"><use href="#broom"/></svg>
+            <p class="step__no">03</p>
+            <h3 class="step__title">Data Cleaning</h3>
+            <p class="step__text">I fix errors, remove duplicates and prepare the data for analysis.</p>
+          </li>
+          <li class="step reveal">
+            <svg class="icon icon-lg" aria-hidden="true"><use href="#chart-line"/></svg>
+            <p class="step__no">04</p>
+            <h3 class="step__title">Data Analytics</h3>
+            <p class="step__text">Here I explore, find patterns and draw meaningful insights.</p>
+          </li>
+          <li class="step reveal">
+            <svg class="icon icon-lg" aria-hidden="true"><use href="#bars"/></svg>
+            <p class="step__no">05</p>
+            <h3 class="step__title">Data Visualization</h3>
+            <p class="step__text">Here, I turn insights into clear, interactive and easy to understand visuals.</p>
+          </li>
+          <li class="step reveal">
+            <svg class="icon icon-lg" aria-hidden="true"><use href="#bulb"/></svg>
+            <p class="step__no">06</p>
+            <h3 class="step__title">Decision Making</h3>
+            <p class="step__text">I share findings, provide recommendations and support better decisions.</p>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 4: WHY WORK WITH ME? =================
+         Four reasons, each with an icon in a white square. -->
+    <section class="section" aria-labelledby="why-title">
+      <div class="container">
+        <div class="center reveal">
+          <h2 class="section-title" id="why-title">Why Work With Me?</h2>
+          <p class="section-sub">What I Bring to the Table</p>
+        </div>
+        <ul class="why__list">
+
+          <li class="why__item reveal">
+            <span class="why__icon"><svg class="icon" aria-hidden="true"><use href="#search"/></svg></span>
+            <div><h3>Curiosity &amp; Deep Understanding</h3><p>I take time to understand the dataset, ask meaningful questions, and uncover insights beyond the surface.</p></div>
+          </li>
+          <li class="why__item reveal">
+            <span class="why__icon"><svg class="icon" aria-hidden="true"><use href="#shield-check"/></svg></span>
+            <div><h3>Accuracy &amp; Integrity</h3><p>I value reliable results, honest interpretation, and careful attention to detail at every stage.</p></div>
+          </li>
+          <li class="why__item reveal">
+            <span class="why__icon"><svg class="icon" aria-hidden="true"><use href="#trending-up"/></svg></span>
+            <div><h3>Growth &amp; Excellence</h3><p>I approach challenges as opportunities to improve, learn, and deliver better work.</p></div>
+          </li>
+          <li class="why__item reveal">
+            <span class="why__icon"><svg class="icon" aria-hidden="true"><use href="#handshake"/></svg></span>
+            <div><h3>Purpose &amp; Collaboration</h3><p>I focus on understanding business needs and communicating findings in ways people can act on.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER: "Need help making sense of your data?" =================
+       Same on every page. Left = dark photo with message + button, right = logo + social icons.
+       It sits after <main>, so it always stays at the bottom of the page. -->
+  <footer class="site-footer">
+    <div class="container">
+      <section class="cta reveal" aria-labelledby="cta-title">
+        <!-- Left half: photo background is set inline so you can swap the image easily -->
+        <div class="cta__left" style="background-image:url('assets/images/cta-handshake.jpg')">
+          <div>
+            <h2 id="cta-title">Need Help Making Sense of Your Data?</h2>
+            <p>I can help you turn your data into clear insights, useful dashboards, and smarter business decisions. Let's work together to uncover what your data is telling you.</p>
+            <!-- Button opens an email to you -->
+            <a class="btn btn--primary btn--sm" href="mailto:ekpohjoseph6@gmail.com?subject=Let%27s%20work%20together">Let's Work Together <svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></a>
+          </div>
+        </div>
+
+        <!-- Right half: logo + social links -->
+        <div class="cta__right">
+          <img src="assets/images/logo.png" alt="JE logo" width="92" height="92" loading="lazy">
+          <p class="cta__follow">FOLLOW ME</p>
+          <!-- TODO: replace each "#" below with your real profile link (LinkedIn, GitHub, X) -->
+          <div class="social social--solid">
+            <a href="mailto:ekpohjoseph6@gmail.com" aria-label="Email"><svg class="icon" aria-hidden="true"><use href="#mail"/></svg></a>
+            <a href="https://www.linkedin.com/in/joseph-ekpoh-019271394" aria-label="LinkedIn" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#linkedin"/></svg></a>
+            <a href="https://github.com/josephtheanalyst08" aria-label="GitHub" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#github"/></svg></a>
+            <a href="https://x.com/_joseph0808" aria-label="X (Twitter)" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#x"/></svg></a>
+          </div>
+        </div>
+      </section>
+      <p class="copyright">&copy; <span id="year">2026</span> Joseph Ekpoh. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ================= SCRIPTS ================= -->
+  <script src="js/main.js"></script>
+  <!-- Keeps the copyright year up to date automatically -->
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+
+</body>
+</html>
