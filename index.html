@@ -130,7 +130,47 @@
       </div> 
     </section>
 
-    <!-- ================= SECTION 3: SKILLS (white background) =================
+<!-- ================= SECTION 3: PROJECTS PREVIEW =================
+         Shows two projects. "View All Projects" + each "View Project" button.
+         To feature a different project here, copy a card from projects.html. -->
+    <section class="section" style="padding-top:0" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="reveal">
+          <div class="section-head">
+            <h2 class="section-title" id="projects-title">Featured works</h2>
+            <!-- Goes to the Projects page -->
+            <a class="link-gold" href="projects.html">View All Projects</a>
+          </div>
+          <p class="projects-lead">A look at some of my recent work, where I've used Excel, Power BI, and SQL to explore data, uncover useful insights, and turn numbers into clear, meaningful stories.</p>
+        </div>
+        <div class="projects-grid" style="margin-top:34px">
+
+        <!-- PROJECT CARD -->
+        <article class="project-card reveal" data-category="powerbi">
+          <img class="project-card__img" src="assets/images/project-logistics.jpg" alt="Shipping containers and a truck at a logistics yard" loading="lazy">
+          <h3>Logistics Company Data Analysis &amp; Dashboard Development</h3>
+          <p class="project-card__tags">Power BI &middot; Data Cleaning &middot; Data Visualization</p>
+          <p class="project-card__desc">Cleaned and transformed logistics data, built interactive dashboards, and uncovered insights into customers, truck performance, fuel usage, and drivers to support better operational decisions.</p>
+          <!-- TODO: change href="#" to the link of this project (GitHub, Power BI report, PDF, etc.) -->
+          <a class="btn btn--primary btn--sm" href="https://github.com/josephtheanalyst08/Logistics-Company-Data-Analysis-Dashboard-Development">View Project</a>
+        </article>
+
+        <!-- PROJECT CARD -->
+        <article class="project-card reveal" data-category="powerbi">
+          <img class="project-card__img" src="assets/images/project-presentation.jpg" alt="Analyst presenting dashboards to a team" loading="lazy">
+          <h3>Medical Insurance Claims </br>Analysis  </h3>
+          <p class="project-card__tags">Power BI &middot; Data Cleaning &middot; Data Visualization</p>
+          <p class="project-card__desc">Cleaned and transformed medical insurance data, built interactive Power BI dashboards, and uncovered insights into claims, patient demographics, and treatment costs to support better underwriting and pricing decisions.</p>
+          <!-- TODO: change href="#" to the link of this project (GitHub, Power BI report, PDF, etc.) -->
+          <a class="btn btn--primary btn--sm" href="#">View Project</a>
+        </article>
+
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- ================= SECTION 4: SKILLS (white background) =================
          Three white cards with tool logos. -->
     <section class="section section--white" aria-labelledby="skills-title">
       <div class="container">
@@ -147,7 +187,7 @@
       </div>
     </section>
 
-    <!-- ================= SECTION 4: SERVICES =================
+    <!-- ================= SECTION 5: SERVICES =================
          Big brown panel with 4 services (2 x 2). -->
     <section class="section" aria-labelledby="services-title">
       <div class="container">
@@ -180,45 +220,7 @@
       </div>
     </section>
 
-    <!-- ================= SECTION 5: PROJECTS PREVIEW =================
-         Shows two projects. "View All Projects" + each "View Project" button.
-         To feature a different project here, copy a card from projects.html. -->
-    <section class="section" style="padding-top:0" aria-labelledby="projects-title">
-      <div class="container">
-        <div class="reveal">
-          <div class="section-head">
-            <h2 class="section-title" id="projects-title">My Projects</h2>
-            <!-- Goes to the Projects page -->
-            <a class="link-gold" href="projects.html">View All Projects</a>
-          </div>
-          <p class="projects-lead">A look at some of my recent work, where I've used Excel, Power BI, and SQL to explore data, uncover useful insights, and turn numbers into clear, meaningful stories.</p>
-        </div>
-        <div class="projects-grid" style="margin-top:34px">
-
-        <!-- PROJECT CARD -->
-        <article class="project-card reveal" data-category="powerbi">
-          <img class="project-card__img" src="assets/images/project-logistics.jpg" alt="Shipping containers and a truck at a logistics yard" loading="lazy">
-          <h3>Logistics Company Data Analysis &amp; Dashboard Development</h3>
-          <p class="project-card__tags">Power BI &middot; Data Cleaning &middot; Data Visualization</p>
-          <p class="project-card__desc">Cleaned and transformed logistics data, built interactive dashboards, and uncovered insights into customers, truck performance, fuel usage, and drivers to support better operational decisions.</p>
-          <!-- TODO: change href="#" to the link of this project (GitHub, Power BI report, PDF, etc.) -->
-          <a class="btn btn--primary btn--sm" href="https://github.com/josephtheanalyst08/Logistics-Company-Data-Analysis-Dashboard-Development">View Project</a>
-        </article>
-
-        <!-- PROJECT CARD -->
-        <article class="project-card reveal" data-category="powerbi">
-          <img class="project-card__img" src="assets/images/project-presentation.jpg" alt="Analyst presenting dashboards to a team" loading="lazy">
-          <h3>Medical Insurance Claims </br>Analysis  </h3>
-          <p class="project-card__tags">Power BI &middot; Data Cleaning &middot; Data Visualization</p>
-          <p class="project-card__desc">Cleaned and transformed medical insurance data, built interactive Power BI dashboards, and uncovered insights into claims, patient demographics, and treatment costs to support better underwriting and pricing decisions.</p>
-          <!-- TODO: change href="#" to the link of this project (GitHub, Power BI report, PDF, etc.) -->
-          <a class="btn btn--primary btn--sm" href="#">View Project</a>
-        </article>
-
-        </div>
-      </div>
-    </section>
-
+    
   </main>
 
   <!-- ================= FOOTER: "Need help making sense of your data?" =================
