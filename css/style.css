@@ -564,34 +564,47 @@ ul { margin: 0; padding: 0; list-style: none; }
    the page taller and pushes the footer further down. ---------------- */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: clamp(20px, 2.6vw, 40px);
 }
 .project-card {
   display: flex;
   flex-direction: column;
+  min-width: 0;
   padding: clamp(14px, 1.6vw, 24px);
   background: var(--brown);
   border-radius: var(--radius);
   box-shadow: var(--shadow-card);
   text-align: left;
+  overflow-wrap: break-word;
 }
 .project-card[hidden] { display: none; }      /* used by the filter */
+
+/* Top row: label on the left, tool tags on the right (wraps on small screens) */
+.project-card__top { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px 12px; }
+.project-card__label { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--gold); }
+.project-card__tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.project-card__tags li { padding: 3px 10px; border: 1px solid var(--gold); border-radius: 6px; background: rgba(200, 128, 52, 0.15); font-size: 12px; }
+
+/* Project title */
+.project-card h3 { margin-top: 22px; font-size: clamp(20px, 2vw, 28px); font-weight: 700; }
+
+/* Project image: use 1200 x 675 px (16:9) so nothing is cropped */
 .project-card__img {
   width: 100%;
+  height: auto;
   aspect-ratio: 16 / 9;
   object-fit: cover;
-  border-radius: 4px;
+  border-radius: 10px;
+  margin-top: 18px;
 }
-.project-card h3 {
-  margin-top: clamp(16px, 2vw, 28px);
-  font-size: clamp(20px, 2.2vw, 32px);
-  font-weight: 700;
-}
-.project-card__tags { margin-top: 10px; font-family: var(--font-head); font-size: clamp(13px, 1.3vw, 18px); font-weight: 500; }
-.project-card__desc { margin-top: 10px; font-size: clamp(12px, 1vw, 14px); }
-.project-card__desc { margin-bottom: 22px; }
-/* margin-top:auto keeps every "View Project" button aligned at the bottom of its card */
+
+/* Problem / Approach / Outcome paragraphs */
+.project-card__text { margin-top: 16px; font-size: clamp(13px, 1.1vw, 16px); color: rgba(255, 255, 255, 0.8); }
+.project-card__text strong { color: var(--white); font-weight: 700; }
+.project-card__text:last-of-type { margin-bottom: 22px; }   /* minimum gap above the button */
+
+/* Button: margin-top:auto keeps every button level at the bottom of its card */
 .project-card .btn { align-self: flex-start; margin-top: auto; }
 
 /* Message shown if a filter has no projects yet */
@@ -729,7 +742,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   }
 
    .services__panel,
-  .projects-grid,
+  .projects-grid { grid-template-columns: minmax(0, 1fr); }
   .skill-bars { grid-template-columns: 1fr; }
 
   
